@@ -1,9 +1,7 @@
-const list = { id, filename }
-
 function getFileNames()
 {
     console.log("getFileNames");
-    showImage("public/IMG_4025.jpg", 200, 200, "1");   
+    showImage("public/IMG_4025.jpg", 400, 200, "1");   
 }
 
 function showImage(src, width, height, alt)
@@ -20,5 +18,14 @@ function showImage(src, width, height, alt)
 
 function addImage(src)
 {
+    // validate user is admin
     
+}
+
+let slides = {}; // array of slides
+
+function genSlide()
+{
+    
+    slides.push("");
 }
