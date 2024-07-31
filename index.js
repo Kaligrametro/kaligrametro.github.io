@@ -22,10 +22,23 @@ function addImage(src)
     
 }
 
-let slides = {}; // array of slides
+// -- Slide management -- //
 
-function genSlide()
+const slides = [];
+
+function genSlide(filename, fileextension)
 {
-    
-    slides.push("");
+    const newSlide = `
+         <div class="slide">
+            <img src="public/${file}.${fileextension}">
+        </div>
+    `;
+
+    document
+    .getElementById("slide_container")
+    .insertAdjacentHTML("afterend", newSlide);
+
+    slides.push(newSlide);
+    return slides.length - 1;
 }
+
