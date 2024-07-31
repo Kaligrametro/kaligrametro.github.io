@@ -1,3 +1,5 @@
+const list = { id, filename }
+
 function getFileNames()
 {
     console.log("getFileNames");
@@ -14,4 +16,9 @@ function showImage(src, width, height, alt)
     image.alt = alt;
 
     document.body.appendChild(image);
+}
+
+function addImage(src)
+{
+    
 }
